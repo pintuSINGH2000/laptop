@@ -1,0 +1,285 @@
+
+body{
+    width:80%;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+header{
+    display: flex;
+    width:90%;
+    height:10vh;
+    margin:auto;
+    align-items: center;
+}
+.left,.mid-list, .right{
+    display:flex;
+}
+.left{
+    flex:1;
+}
+nav{
+    flex:2;
+}
+.right{
+    flex:1;
+}
+
+.left img{
+    width:80px;
+    margin-top:50px;
+}
+.left div{
+    line-height: 27px;
+    font-size: 26px;
+    position: relative;
+    color:darkgray;
+}
+.left a{
+    text-decoration: none;
+}
+.mid-list {
+    justify-content:space-around;
+    list-style: none;
+ 
+}
+
+.list{
+    color:#5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+.mid-list li a:hover, .navbar li a.active{
+    text-decoration:underline;
+    color:rgb(169, 71, 41);
+
+}
+.right {
+    flex:1;
+    justify-content: flex-end;
+}
+.right img{
+    width: 50px;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin:auto;
+    min-height: 80vh;
+    align-items: center;
+}
+button{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.introduction{
+    flex:1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background:linear-gradient(to right,rgb(66, 61, 62),rgb(130, 120, 120));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p{
+    margin-top:5px;
+    font-size:22px;
+    color:rgb(128, 112, 112);
+}
+.cta{
+    padding:50px 0px 0px 0px;
+}
+.cta-select{
+    border:2px solid rgb(182, 72, 145);
+    background: transparent;
+    color: rgb(182, 72, 145);
+    width:150px;
+    height:50px;
+    cursor: pointer;
+    font-size: 16px;;
+    
+}
+.cta-add{
+    background: rgb(182, 72, 145);
+    width:150px;
+    height:50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none; 
+    color: white;
+    margin:30px 0px 0px 30px;
+}
+.cover{
+    flex:1;
+    display: flex;
+    justify-content:right;
+    height:60vh;
+    position: relative;
+}
+.cover img{
+    height:100%;
+    padding-bottom: 100px;;
+   
+}
+.transistion-image-1,.transistion-image-2,.transistion-image-3,.transistion-image-4{
+    position: absolute;
+    width:82%;
+}
+.transistion-image-1{
+    opacity: 0;
+    animation: slide 16s linear infinite;
+}
+.transistion-image-2{
+    opacity: 0;
+    animation: slide 16s linear infinite;
+    animation-delay: 4s;
+    
+}
+.transistion-image-3{
+    opacity: 0;
+    animation: slide 16s linear infinite;
+    animation-delay: 8s;
+}
+.transistion-image-4{
+    opacity: 0;
+    animation: slide 16s linear infinite;
+    animation-delay: 12s;
+}
+@keyframes slide {
+    0%{
+        opacity: 1;   
+       }
+       25%{
+           opacity: 0;
+       }
+       75%{
+           opacity:0;
+       }
+      100%{
+    
+          opacity: 0;
+      }
+}
+.transistion-image:hover{
+    opacity: 1;
+}
+.arrow{
+    border:solid #bbb;
+    border-width:0 10px 10px 0;
+    display:inline-block;
+    padding: 7px;
+}
+.arrow-right{
+    transform: rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+}
+.arrow-left{
+    transform: rotate(135deg);
+    -webkit-transform:rotate(135deg);
+}
+.dot{
+    height:20px;
+    width:20px;
+    background-color: #bbb;
+    border-radius:50%;
+    display:inline-block;
+    
+}
+.dot-1{
+    animation:change 16s infinite;
+    animation-delay: 0s;
+}
+.dot-2{
+    animation:change 16s infinite;
+    animation-delay: 4s;
+}
+.dot-3{
+    animation:change 16s infinite;
+    animation-delay: 8s;
+}
+.dot-4{
+    animation:change 16s infinite;
+    animation-delay: 12s;
+}
+@keyframes change {
+    0%{
+     background-color: black;   
+    }
+    25%{
+        background-color: #bbb;
+    }
+    75%{
+        background-color: #bbb;
+    }
+    100%{
+        background-color: #bbb;
+    }
+}
+.big-circle{
+    position: absolute;
+    top:0px;
+    right:0px;
+    z-index:-1;
+    opacity: 0.2;
+    height:80%;
+}
+.mid-circle{
+    position: absolute;
+    top:30%;
+    right:30%;
+    z-index:-1;
+    height:60%;
+    opacity:0.5;
+}
+.small-circle{
+    position: absolute;
+    bottom:0%;
+    left:20%;
+    z-index:-1;
+    width:20%;
+    
+}
+.select{
+    width:40vh;
+    display:flex;
+    justify-content: space-around;
+    position: absolute;
+    right:30%;
+    bottom:10%;
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+    .cta{
+        padding: 10px 0px 0px 0px;
+        position: absolute;
+    }
+    .select{
+    position: fixed;
+    bottom: -6%;
+    right: 52%;
+    width: 44%;
+    transform: translate(50%,5%);
+    }
+    .cover{
+        width: 81%;
+        height: 37%;
+        position: absolute;
+        bottom: -2%;
+    }
+
+    }
+    .small-circle,.mid-circle,.big-circle{
+        opacity: 0.2;
+    }
+}
