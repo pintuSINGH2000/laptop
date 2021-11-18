@@ -245,41 +245,41 @@ button{
     right:30%;
     bottom:10%;
 }
-
 @media screen and (max-width: 1024px) {
     .presentation{
         flex-direction: column;
     }
     .introduction{
-        margin-top: 5vh;
+        margin-top: 4vh;
+        margin-left: 7vh;
         text-align: center;
     }
     .intro-text h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     .intro-text p{
-        font-size: 18px;
+        font-size: 15px;
     }
     .cta{
         padding: 10px 0px 0px 0px;
-        position: absolute;
-    }
-    .select{
-    position: fixed;
-    bottom: -6%;
-    right: 52%;
-    width: 44%;
-    transform: translate(50%,5%);
     }
     .cover{
-        width: 81%;
-        height: 37%;
-        position: absolute;
-        bottom: -2%;
+        margin-left: 7vh;
     }
-
+    .select{
+    bottom: 3%;
+    right: 56%;
+    width: 30%;
+    transform: translate(50%,5%);
     }
+    .transistion-image-1,.transistion-image-2,.transistion-image-3,.transistion-image-4{
+        width:40%;
+        height:40%;
+       bottom:10%;
+      
+    }   
     .small-circle,.mid-circle,.big-circle{
         opacity: 0.2;
     }
+
 }
