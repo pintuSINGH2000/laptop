@@ -305,11 +305,11 @@ button{
     bottom: 3%;
     right: 51%;
     width: 35%;
-    transform: translate(50%,50%);
+    transform: translate(50%,5%);
     }
     .transistion-image-1,.transistion-image-2,.transistion-image-3,.transistion-image-4{
         width:50%;
-        height:30%;
+        height:27%;
        bottom:8%;
     
     }
