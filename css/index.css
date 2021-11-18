@@ -110,18 +110,13 @@ button{
 .cover{
     flex:1;
     display: flex;
-    justify-content:right;
+    justify-content:center;
     height:60vh;
-    position: relative;
-}
-.cover img{
-    height:100%;
-    padding-bottom: 100px;;
-   
 }
 .transistion-image-1,.transistion-image-2,.transistion-image-3,.transistion-image-4{
     position: absolute;
-    width:82%;
+    height: 60%;
+    width:30%;
 }
 .transistion-image-1{
     opacity: 0;
